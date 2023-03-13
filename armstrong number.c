@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<math.h>
 
 int main()
 {
@@ -9,16 +10,16 @@ int main()
     while (n > 0)
     {
         rem = n % 10;
-        rev = rev * 10 + rem;
+        rev = rem * rem * rem + rev;
         n = n / 10;
     }
     if (ori == rev)
     {
-        printf("%d is a palindrome number.\n", ori);
+        printf("%d is a armstrong number.\n", ori);
     }
     else
     {
-        printf("%d is not a palindrome number.\n", ori);
+        printf("%d is not a armstrong number.\n", ori);
     }
     return 0;
 }
