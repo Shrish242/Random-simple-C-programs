@@ -56,6 +56,6 @@ int main()
             printf("%d\n", c[i][j]);
         }
     }
-    return 0 ;
+    return 0 ; 
     
 }
