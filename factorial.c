@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<conio.h>
 
 int main() {
     int n;
@@ -12,4 +13,5 @@ int main() {
     }
     printf("\n%d is the sum of the first %d numbers.\n", fact ,n);
     return 0;
+    getch();
 }
