@@ -1,1 +1,1 @@
-Many more programs yet to come
+This concludes the C program upto pointers. Thank you 
