@@ -1,22 +1,28 @@
-/* Write a program to find the prime number from 1 to 500. */
+//generating prime numbers from 1-100 using function
 
-#include <stdio.h>
-
+#include<stdio.h>
+#include<conio.h>
+void prime1(int , int);
 int main(){
-	int prime,i,count,j;
-	
-	printf("ALL THE PRIME NUMBER BETWEEN THE RANGE OF 1 to 500 is:\n ");
-	for(i=1;i<=500;i++){
-		count=0;
-		for(j=1;j<=i;j++){
-			if(i % j == 0){
-				count++;
+	int n , i;
+	prime1(n , i);
+}
+void prime1(int n , int i){
+	for ( i = 2; i <= 100; i++)
+	{
+		for ( n = 2; n <= i; n++)
+		{
+			if ( i == n)
+			{
+				printf("%d\t" , i);
+			}	
+			else if (i % n == 0)
+			{
+				break;
 			}
+			
 		}
-		if(count==2){
-			printf("%d\t",i);
-		}
-		
 	}
-	return 0;
+		
+
 }

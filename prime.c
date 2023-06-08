@@ -6,10 +6,11 @@ int main()
     scanf("%d" ,&n);
     for (i = 2 ; i <= n ; i++){
         if (n % i == 0){ 
-            printf("%d isnot prime number" ,n);}
-        else
+            printf("%d isnot prime number" ,n);
+            break;}
+        if (n == i)
         { 
         printf("%d is prime number" ,n);}
-        return 0;
     }
+    return 0;
 }
